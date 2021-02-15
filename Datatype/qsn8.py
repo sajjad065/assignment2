@@ -1,0 +1,5 @@
+str=input("enter string ")
+print("you entered " +str)
+length=len(str)
+n=int(input("input index number which you want to remove "))
+print(str[:(n-1)] +str[n:])
