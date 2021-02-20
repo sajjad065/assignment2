@@ -1,3 +1,7 @@
-str=input("Enter comma separated words ")
-words=sorted(set(str.split(',')))
-print(words)
+str=input("Enter string ")
+tag=input("mention tag to add around string ")
+print("add_tags"+"(" +"'" +tag  +"'" +"," +" ' " +str+ "'" +")")
+print("<" +tag+">"+str+"<"+tag+">")
+
+
+

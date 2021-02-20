@@ -1,6 +1,5 @@
 total=int(input("Enter total numbers "))
 lis=[]
-multiply=1
 for i in range(total):
     num=int(input("Enter number "))
     lis.append(num)

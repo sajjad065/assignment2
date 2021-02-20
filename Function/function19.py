@@ -1,11 +1,5 @@
-def fib(n):
-    a=0
-    b=1
-    print(a)
-    print(b)
-    for i in range(2,n):
-        c=a+b
-        a=b
-        b=c
-        print(c)
-c=lambda x:x**3        
+from functools import reduce
+n=int(input("Enter upto how many terms you want fibonacci series "))
+def fib_series(n):
+    return reduce(lambda x, _: x+[x[-1]+x[-2]], range(n-2), [0,1])
+print(fib_series(n))
